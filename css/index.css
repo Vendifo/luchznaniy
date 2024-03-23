@@ -284,8 +284,6 @@ transition: all 0.3s;
     position: relative;
     z-index: 2;
     transform: translate(-20%, -300px);
-
-
 }
 
 .main-content__img-box {
@@ -820,6 +818,7 @@ animation: Animation_twist1 3s forwards;
     text-transform: uppercase;
     line-height: 40px;
     max-width: 600px;
+    z-index: 10;
 }
 
 .luchznaniyru__title span {

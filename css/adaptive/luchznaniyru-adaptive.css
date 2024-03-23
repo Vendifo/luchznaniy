@@ -1,10 +1,19 @@
 @media screen and (max-width: 1000px)  {
     .luchznaniyru__decoration-wrapper {
-        display: none
+transform: scale(0.6);
     }
-
+.decoration__wrapper {
+    right: -355px;
+    top: -1000px;
+}
     .luchznaniyru__container{
         margin-top: 20px;
+    }
+
+    .luchznaniy__pc {
+        display: flex;
+        z-index: 10;
+    position: relative;
     }
 
     .luchznaniyru__text {
@@ -75,7 +84,7 @@
 
     .luchznaniyru__item {
         width: 320px;
-        height: 100%;
+        height: 140px;
         margin: 0 auto;
     }
 
@@ -88,5 +97,48 @@
 
     .license__button a {
         text-wrap:  nowrap;
+    }
+}
+@media screen and (max-width: 699px){
+    .luchznaniyru__title {
+        max-width: 250px;
+    }
+    .decoration__wrapper {
+        top: -1500px;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    .luchznaniyru__decoration-wrapper {
+        transform: scale(1);
+            }
+.main-content__img-box {
+    background-color: var(--litegrey);
+}
+.luchznaniyru__decoration-wrapper .decoration__wrapper .decoration .main-content__img-box::before {
+display: none;
+}
+.main-content__img-decor {
+    display: none;
+}
+.main-content__img-box::after {
+    transform: scale(0.5);
+    opacity: 1;
+}
+
+.main-content__img-box img {
+    transform: translate(-99px, 609px);
+    opacity: 0.3;
+    border-radius: 0;
+}
+.luchznaniyru__title {
+    line-height: 32px;
+}
+
+    .luchznaniyru__decoration-wrapper .decoration__wrapper .decoration .main-content__img-box::after {
+        top: 579px;
+        left: 5px;
+        opacity: 0.9;
     }
 }
