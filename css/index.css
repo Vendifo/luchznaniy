@@ -27,59 +27,7 @@ body {
 }
 
 /* ----burger-from-56----- */
-.burger {
-    display: none;
-    flex-direction: column;
-    align-items: flex-end;
-}
 
-.burger__line--one {
-    display: block;
-    width: 30px;
-    height: 3px;
-    background-color: #20262A;
-    border-radius: 5px;
-    display: none;
-}
-
-.burger__line--two {
-    display: block;
-    width: 30px;
-    height: 3px;
-    background-color: #20262A;
-    margin: 4px 0;
-    border-radius: 5px;
-    display: none;
-}
-
-.burger__line--three {
-    display: block;
-    width: 15px;
-    height: 3px;
-    margin-left: 15px;
-    border-radius: 5px;
-    background-color: #20262A;
-    display: none;
-}
-.burger__line--four {
-width: 40px;
-display: block;
-height: 3px;
-border-radius: 5px;
-background-color: #20262A;
-transform: rotate(43deg);
-}
-.burger__line--five {
-    top: 18px;
-    position: absolute;
-    left: 12px;
-    width: 40px;
-    display: block;
-    height: 3px;
-    border-radius: 5px;
-    background-color: #20262A;
-    transform: rotate(137deg);
-}
 
 .wrapper {
     min-height: 100%;
@@ -668,7 +616,7 @@ animation: Animation_twist1 3s forwards;
     display: block; /* При наведении показывается */
 }
 
-.kpkcard-license a {
+.kpk__card-license a {
     display: flex;
     gap: 40px;
     align-items: center;
@@ -676,7 +624,7 @@ animation: Animation_twist1 3s forwards;
     padding-left: 20px;
 }
 
-.kpkcard-license p {
+.kpk__card-license p {
     color: var(--skyblue);
     font-size: 14px;
 }
