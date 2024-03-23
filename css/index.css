@@ -58,7 +58,8 @@ body {
 
 .header__row {
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
+    
 }
 
 .header__logo-container {
@@ -85,13 +86,14 @@ body {
 
 .header__info {
     display: flex;
-    gap: 20px;
     align-items: center;
+
 }
 
 .header__call {
     display: flex;
     gap: 10px;
+    
 }
 
 .phoneicon {
@@ -107,6 +109,8 @@ body {
 }
 
 .header__btn {
+    margin-left: auto;
+    margin-top: 5px;
     display: flex;
     gap: 15px;
     align-items: center;
