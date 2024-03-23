@@ -257,7 +257,7 @@ body {
 .decoration {
     position: relative;
     z-index: 2;
-    transform: translate(-20%, -520px);
+    transform: translate(-20%, -300px);
 
 
 }
@@ -355,7 +355,65 @@ body {
     z-index: 5;
     background: url(../assets/decor/background_ptrn_04.svg);
 }
+/* animation */
 
+.main-content__certificate {
+    z-index: 15;
+}
+.main-content__certificate div::after {
+content: "";
+width: 20px;
+height: 20px;
+position: absolute;
+display: block;
+background: url(../assets/decor/luchznaniy_ico20_search.svg);
+bottom: 50px;
+right: 125px;
+}
+
+.main-content__certificate:hover div::before{
+transform: scale(1.16);
+}
+.main-content__certificate:hover div::after{
+display: none;
+}
+.main-content__certificate div::before {
+    z-index: 5;
+}
+
+.main-content__certificate:hover::before {
+z-index: 1;
+animation: Animation_twist1 3s forwards;
+}
+.main-content__certificate:hover::after {
+    z-index: 1;
+    animation: Animation_twist2 3s forwards;
+}
+
+
+@keyframes Animation_twist1 {
+100% {
+    right: 7px;
+    top: 141px;
+    opacity: 0.7;
+    width: 180px;
+    height: 72px;
+    transform: rotate(136deg);
+    background: url(../assets/decor/text11.svg);
+    }
+}
+
+@keyframes Animation_twist2 {
+100% {
+    top: 68px;
+    right: 82px;
+    opacity: 0.7;
+    width: 180px;
+    height: 72px;
+    transform: rotate(136deg);
+    background: url(../assets/decor/text22.svg);
+    }
+}
 /* ========== */
 
 .cart__list {
