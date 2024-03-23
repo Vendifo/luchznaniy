@@ -34,6 +34,8 @@ body {
     flex-direction: column;
 }
 
+
+
 .container {
     max-width: 1170px;
     padding: 0 15px;
@@ -149,6 +151,13 @@ transition: all 0.3s;
     font-size: 14px;
     font-weight: 500;
 }
+
+@media screen and (max-width: 1200px)  {
+    .nav__item {
+        text-wrap: wrap;
+    }
+}
+
 
 /* ====== Main KPP ====== */
 /* ====== Link ====== */
