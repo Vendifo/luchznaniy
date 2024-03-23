@@ -211,7 +211,7 @@ body {
     border-radius: 99px;
     background-color: var(--midyellow);
     box-shadow: 0 0 20px 5px rgba(252, 185, 0, .5);
-    margin-bottom: 200px;
+    
     cursor: pointer;
     height: 60px;
 
@@ -248,7 +248,7 @@ body {
 }
 
 /* ------------ */
-.decoration__obertka {
+.decoration__wrapper {
     position: absolute;
     right: 245px;
     height: 0;
@@ -359,6 +359,7 @@ body {
 /* ========== */
 
 .cart__list {
+    margin-top: 200px;
     position: relative;
     display: flex;
     gap: 30px;
@@ -484,9 +485,9 @@ body {
     padding-left: 39px;
     height: 120px;
     border-radius: 60px 0 0 60px;
-    /* Закругленные углы */
+
     transform: translateX(-37%);
-    /* Смещаем блок на 100% ширины вправо */
+    
 
 }
 
@@ -517,12 +518,28 @@ body {
     height: 76px;
 }
 
-.kpk__main-title-image-search {
-    margin-right: auto;
-    color: var(--midgrey);
-    width: 20px;
-    height: 20px;
+.kpk__main-title-image:hover {
+    width: 108px;
+    height: 76px;
+    transform: scale(1.13);
 }
+
+
+
+.kpk__main-title-image-search .hover-svg {
+    display: none; /* Изначально скрыто */
+}
+
+.kpk__main-title-image-search:hover .default-svg {
+    display: none; /* При наведении скрывается */
+}
+
+.kpk__main-title-image-search:hover .hover-svg {
+    display: block; /* При наведении показывается */
+}
+
+
+
 
 .kpk__main-title-left {
     position: relative;
@@ -530,6 +547,8 @@ body {
     gap: 25px;
     z-index: 1;
 }
+
+
 
 .kpk__main__circle {
     min-width: 120px;
@@ -726,4 +745,220 @@ body {
 }
 
 
+.luchznaniyru__list {
+    margin-top: 70px;
+    
+    display: grid;
+    grid-template-columns: 270px 270px;
+    grid-template-rows: 140px 140px;
+    gap: 30px;
+    
+}
 
+.luchznaniyru__item {
+    width: 270px;
+    height: 140px;
+    border-radius: 8px;
+    position: relative;
+    background-color: var(--absolute-white);
+}
+
+.luchznaniyru__item-text {
+    font-size: 14px;
+    font-weight: 500;
+    max-width: 220px;
+    line-height: 20px;
+    padding: 20px 20px 30px 20px;
+}
+
+.luchznaniyru__item-text span {
+    font-weight: 700;
+}
+
+.luchznaniyru__item-prices {
+    display: flex;
+    gap: 5px;
+    padding-left: 20px;
+    align-items: end;
+    
+}
+
+.luchznaniyru__item-original__price {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.luchznaniyru__item-discounted-price {
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration:line-through;
+}
+
+.luchznaniyru__item-line {
+    position: absolute;
+    width: 2px;
+    height: 40px;
+    background-color: var(--skyblue);
+    left: 0;
+    top: 20px;
+}
+
+.luchznaniyru__item-line1 {
+    position: absolute;
+    width: 2px;
+    height: 60px;
+    background-color: var(--skyblue);
+    left: 0;
+    top: 20px;
+}
+
+.luchznaniyru__item-line2 {
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background-color: var(--skyblue);
+    left: 0;
+    top: 20px;
+}
+
+
+
+.luchznaniyru__item-image {
+    position: absolute;
+    display: flex;
+    gap: 5px;
+    top: -15px;
+    background-color: var(--skyblue);
+    right: -15px;
+    align-items: center;
+    padding: 5px 10px 5px 5px;
+    border-radius: 6px;
+}
+
+.luchznaniyru__item-image img {
+    width: 20px;
+    height: 20px;
+}
+
+.luchznaniyru__item-image p {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--absolute-white);
+}
+
+
+.luchznaniyru__item-discount {
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    display: flex;
+    gap: 5px;
+    padding: 5px 5px 5px 10px;
+    border-radius: 6px;
+    background-color: var(--absolute-black);
+}
+
+.luchznaniyru__item-percent {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--midyellow);
+}
+
+.luchznaniyru__item-date {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--absolute-white);
+}
+
+.luchznaniyru__item-subtext img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: -10px;
+}
+
+.luchznaniyru__item-subtext {
+    margin-top: 40px;
+    position: relative;
+    padding-left: 10px ;
+    display: flex;
+    gap: 10px;
+    
+    align-items: center;
+}
+
+.luchznaniyru__item-subtext p {
+    padding-left: 60px;
+    font-size: 25px;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.luchznaniyru__buttons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 70px;
+}
+
+.luchznaniyru__item-subtext span {
+    color: var(--midyellow);
+}
+
+.license__button {
+    margin-top: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 131px;
+    width: 358px;
+    height: 60px;
+    background-color: var(--absolute-white);
+    border-radius: 99px;
+    border: none;
+}
+
+.license__button-search {
+    width: 20px;
+    height: 20px;
+    padding-left: 20px;
+}
+
+.license__button-certificate {
+    position: absolute;
+    width: 86px;
+    height: 75px;
+    top: -15px;
+    left: 60px;
+    
+}
+
+.license__button-search:hover .license__button-certificate {
+    height: 90px; 
+    top: -30px; 
+}
+
+.license__button-search:hover ~ .license__button-certificate {
+    height: 90px; 
+    top: -30px; 
+}
+
+.license__button-certificate:hover {
+    position: absolute;
+    width: 86px;
+    height: 90px;
+    top:-30px;
+    left: 60px;
+}
+
+.license__button a {
+    color: var(--absolute-black);
+    font-size: 14px;
+    font-weight: 500;
+    
+}
+
+.license__button a:hover {
+    color: var(--skyblue);
+    
+}
