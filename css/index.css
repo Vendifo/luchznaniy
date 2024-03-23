@@ -122,6 +122,12 @@ body {
     font-weight: 500;
 }
 
+.header__btn:hover {
+cursor: pointer;
+transform: scale(1.06);
+transition: all 0.3s;
+}
+
 .nav__list {
     padding: 0 15px;
     margin-top: 10px;
@@ -138,7 +144,7 @@ body {
 }
 
 .nav__item {
-
+    text-wrap: nowrap;
     margin: auto;
     font-size: 14px;
     font-weight: 500;
@@ -240,12 +246,13 @@ body {
     height: 46px;
     background-color: #ffcb3e;
     border-radius: 50%;
-    transition: 0.5s;
+    transition: all 0.5s;
 }
 
 .main-content__button:hover img {
     width: 46px;
     height: 46px;
+    transition: all 0.5s;
 }
 
 /* ------------ */
@@ -792,7 +799,7 @@ animation: Animation_twist1 3s forwards;
     font-weight: 600;
 }
 
-.luchznaniyru__directions p {
+.luchznaniyru__directions a {
     font-size: 14px;
     font-weight: medium;
 }
@@ -992,22 +999,16 @@ animation: Animation_twist1 3s forwards;
     
 }
 
-.license__button-search:hover .license__button-certificate {
-    height: 90px; 
-    top: -30px; 
-}
-
 .license__button-search:hover ~ .license__button-certificate {
     height: 90px; 
-    top: -30px; 
+    top: -30px;
+    transition: all 0.4s;
 }
 
 .license__button-certificate:hover {
-    position: absolute;
-    width: 86px;
     height: 90px;
     top:-30px;
-    left: 60px;
+    transition: all 0.4s;
 }
 
 .license__button a {
@@ -1020,4 +1021,23 @@ animation: Animation_twist1 3s forwards;
 .license__button a:hover {
     color: var(--skyblue);
     
+}
+
+.luchznaniyru__decoration-wrapper .decoration__wrapper .decoration .main-content__img-box::before{
+    background: url(../assets/decor/IIII.png);
+    width: 82px;
+    height: 25px;
+    bottom: 15px;
+    right: -16px;
+}
+.luchznaniyru__decoration-wrapper .decoration__wrapper .decoration .main-content__img-box::after{
+    background: url(../assets/decor/background_doctor1.png);
+    width: 470px;
+    height: 570px;
+    top: -70px;
+    left: 30px;
+}
+
+.luchznaniyru__decoration-wrapper {
+    transform: translate(360px, -415px);
 }
