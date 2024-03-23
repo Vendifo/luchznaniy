@@ -825,6 +825,8 @@ animation: Animation_twist1 3s forwards;
 }
 
 .luchznaniyru__directions {
+    position: relative;
+    z-index: 3;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -846,10 +848,14 @@ animation: Animation_twist1 3s forwards;
     background-color: var(--darkgrey);
 }
 
+.directions-circle {
+    display: none;
+}
 
 .luchznaniyru__list {
     margin-top: 70px;
-    
+    position: relative;
+    z-index: 2;
     display: grid;
     grid-template-columns: 270px 270px;
     grid-template-rows: 140px 140px;
