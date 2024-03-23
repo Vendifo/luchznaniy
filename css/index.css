@@ -573,6 +573,10 @@ animation: Animation_twist1 3s forwards;
 
 }
 
+.kpk__main-title-right-mobile {
+    display: none;
+}
+
 .kpk__main-background__blur {
 
     position: absolute;

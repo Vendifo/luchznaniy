@@ -1,7 +1,5 @@
 @media screen and (max-width: 1000px)  {
-    .header {
-        display: none;
-    }
+    
     
     .link__container {
         display: none;

@@ -1,7 +1,5 @@
 @media screen and (max-width: 1000px)  {
-    .header {
-        display: none;
-    }
+    
     
     .link__container {
         display: none;
@@ -35,24 +33,7 @@
     }
 
     .kpk__main-title-right {
-        position: absolute;
-        
-        top: 910px;
-        left: 0;
-        width: 100%;
-        background-color: var(--absolute-white);
-        display: flex;
-        flex-direction: row-reverse;
-        gap: 20px;
-        align-items: end;
-        
-        height: 120px;
-        border-radius: 0;
-    
-        transform: translate(-20px);
-        z-index: 3;
-        padding-bottom: 20px;
-    
+        display: none;
     }
 
     .kpk__main-title-image-search {
@@ -87,7 +68,6 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        padding-bottom: 160px;
     }
 
     .kpk__card__item {
@@ -108,38 +88,48 @@
     .kpk__card__item-text {
         max-width: 210px;
     }
-}
 
-@media screen and (max-width: 709px){
-    .kpk__main-title-right {
-        top: 1250px;
+    .kpk__main-title-right-mobile {
+        box-sizing: border-box;
+        background-color: #Fff;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        margin: 20px 0;
+        height: 120px;
+        padding: 20px;
+        gap: 15px;
+        align-items: end;
+
     }
-}
 
-
-@media screen and (max-width: 520px){
-    .kpk__main-title-right {
-        top: 1290px;
+    .kpk__main-title-image-search-mobile {
+        position: absolute;
+        top: 20px;
+        right: 20px;
     }
-}
 
-@media screen and (max-width: 454px){
-    .kpk__main-title-right {
-
-        top: 1330px;
+    .kpk__main-title-image-mobile {
+        width: 114px;
+        height: 80px;
     }
-}
 
-@media screen and (max-width: 343px){
-    .kpk__main-title-right {
-
-        top: 1370px;
+    .kpk__main-title-image-search-mobile img {
+        width: 20px;
     }
-}
 
-@media screen and (max-width: 330px){
-    .kpk__main-title-right {
-
-        top: 1410px;
+    .kpk__main-title-image-search-mobile .hover-svg {
+        display: none; /* Изначально скрыто */
     }
+    
+    .kpk__main-title-image-search-mobile:hover .default-svg {
+        display: none; /* При наведении скрывается */
+    }
+    
+    .kpk__main-title-image-search-mobile:hover .hover-svg {
+        display: block; /* При наведении показывается */
+    }
+    
 }
+
