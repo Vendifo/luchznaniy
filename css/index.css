@@ -440,7 +440,7 @@ animation: Animation_twist1 3s forwards;
 }
 /* ========== */
 
-.cart__list {
+.card__list {
     margin-top: 200px;
     position: relative;
     display: flex;
@@ -450,7 +450,7 @@ animation: Animation_twist1 3s forwards;
 
 }
 
-.cart__item {
+.card__item {
     margin-bottom: -70px;
     background-color: var(--absolute-white);
     width: 270px;
@@ -460,28 +460,28 @@ animation: Animation_twist1 3s forwards;
 
 }
 
-.cart__item-content {
+.card__item-content {
     padding: 20px;
     display: flex;
     align-items: center;
 }
 
-.cart__item img {
+.card__item img {
     width: 40px;
     height: 40px;
 }
 
-.cart__item-number {
+.card__item-number {
     font-size: 30px;
     font-weight: 700;
     color: var(--midgrey);
 }
 
-.cart__item-text {
+.card__item-text {
     padding: 0 0px 20px 20px;
 }
 
-.cart__item-square-list {
+.card__item-square-list {
     margin-left: auto;
     margin-right: 10px;
     display: grid;
@@ -489,13 +489,13 @@ animation: Animation_twist1 3s forwards;
     gap: 10px;
 }
 
-.cart__item-square-item {
+.card__item-square-item {
     width: 8px;
     height: 8px;
     background-color: var(--midgrey);
 }
 
-.cart__item-square-item-active {
+.card__item-square-item-active {
     background-color: var(--absolute-white);
     outline: 2.2px solid var(--midgrey);
     outline-offset: -2.2px;
@@ -507,7 +507,7 @@ animation: Animation_twist1 3s forwards;
     width: 100%;
 }
 
-.cart__item-line {
+.card__item-line {
     position: absolute;
     width: 2px;
     height: 20px;
@@ -515,15 +515,15 @@ animation: Animation_twist1 3s forwards;
     top: 80px;
 }
 
-.cart__item-active {
+.card__item-active {
     background-color: var(--skyblue);
 }
 
-.cart__item-number-active {
+.card__item-number-active {
     color: var(--absolute-white);
 }
 
-.cart__item-text-active {
+.card__item-text-active {
     color: var(--absolute-white);
 }
 
@@ -534,7 +534,7 @@ animation: Animation_twist1 3s forwards;
 
 }
 
-.cart__item-line-active {
+.card__item-line-active {
     background-color: var(--absolute-white);
     height: 40px;
 }
