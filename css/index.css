@@ -50,6 +50,7 @@ body {
 
 .header {
     background-color: var(--absolute-white);
+    z-index: 20;
 }
 
 .header__container {
@@ -255,6 +256,7 @@ transition: all 0.3s;
 .main-content__wrapper {
     position: relative;
     z-index: 3;
+    max-width: 500px;
 }
 
 .main-content__button:hover div {
