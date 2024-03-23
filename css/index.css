@@ -853,6 +853,9 @@ animation: Animation_twist1 3s forwards;
 .directions-circle {
     display: none;
 }
+.luchznaniy__pc {
+    display: none;
+}
 
 .luchznaniyru__list {
     margin-top: 70px;
