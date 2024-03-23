@@ -1,3 +1,145 @@
 @media screen and (max-width: 1000px)  {
+    .header {
+        display: none;
+    }
     
+    .link__container {
+        display: none;
+    }
+
+    .kpk__main-container {
+        margin-top: 30px;
+        position: relative;
+    }
+
+    .kpk__main-title-left {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .kpk__main__circle {
+        max-width: 120px;
+    }
+
+    .kpk__main-title-text {
+        min-width: 270px;
+    }
+
+    .kpk__main-title {
+        display: flex;
+    }
+
+    .adaptive__mob {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .kpk__main-title-right {
+        position: absolute;
+        
+        top: 910px;
+        left: 0;
+        width: 100%;
+        background-color: var(--absolute-white);
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 20px;
+        align-items: end;
+        
+        height: 120px;
+        border-radius: 0;
+    
+        transform: translate(-20px);
+        z-index: 3;
+        padding-bottom: 20px;
+    
+    }
+
+    .kpk__main-title-image-search {
+        position: absolute;
+        top: 20px;
+        right: 10%;
+    }
+
+    .kpk__main-title-description {
+
+        margin: 0 auto;
+        max-width: 200px;
+    }
+
+    .kpk__main-title-text {
+        font-size: 25px;
+    }
+
+    .kpk__course-offer {
+        flex-direction: column;
+    }
+
+    .main-content__button {
+        text-wrap: nowrap;
+        margin-top: 0;
+        border-radius: 0 99px 99px 0;
+        transform: translateX(-30px);
+        width: 360px;
+    }
+
+    .kpk__card__list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-bottom: 160px;
+    }
+
+    .kpk__card__item {
+        width: 320px;
+        height: 100%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
+    .kpk__card__item-img {
+        padding-bottom: 20px;
+    }
+
+    .kpk__card__item-line {
+        top: 80px;    
+    }
+
+    .kpk__card__item-text {
+        max-width: 210px;
+    }
+}
+
+@media screen and (max-width: 709px){
+    .kpk__main-title-right {
+        top: 1250px;
+    }
+}
+
+
+@media screen and (max-width: 520px){
+    .kpk__main-title-right {
+        top: 1290px;
+    }
+}
+
+@media screen and (max-width: 454px){
+    .kpk__main-title-right {
+
+        top: 1330px;
+    }
+}
+
+@media screen and (max-width: 343px){
+    .kpk__main-title-right {
+
+        top: 1370px;
+    }
+}
+
+@media screen and (max-width: 330px){
+    .kpk__main-title-right {
+
+        top: 1410px;
+    }
 }

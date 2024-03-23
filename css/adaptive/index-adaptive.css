@@ -1,3 +1,27 @@
 @media screen and (max-width: 1000px)  {
+    .header {
+        display: none;
+    }
     
+    .link__container {
+        display: none;
+    }
+
+    .main-content__button {
+        text-wrap: nowrap;
+        margin-top: 0;
+        border-radius: 0 99px 99px 0;
+        transform: translateX(-30px);
+        width: 360px;
+    }
+
+    .main-content {
+        margin-top: 20px;
+    }
+
+    .main-content h1 {
+        max-width: 500px;
+        font-weight: 500;
+        font-size: 25px
+    }
 }
